@@ -6,6 +6,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn import tree
 import graphviz
 # Êý¾Ý¼ÓÔØ
+# secondary time learning
 train_data = pd.read_csv('F:/chen/download/Titanic_Data-master/train.csv')
 test_data = pd.read_csv('F:/chen/download/Titanic_Data-master/test.csv')
 
