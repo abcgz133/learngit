@@ -6,13 +6,20 @@ from sklearn.model_selection import cross_val_score
 from sklearn import tree
 import graphviz
 # 数据加载
-# secondary time learning
+
+# the first time learning
+# tthe first time learning
+# tthe first time learning
+# tthe first time learning
+
+
 train_data = pd.read_csv('F:/chen/download/Titanic_Data-master/train.csv')
 test_data = pd.read_csv('F:/chen/download/Titanic_Data-master/test.csv')
 
 
 
 # 数据探索
+
 print(train_data.info())
 print('-'*30)
 print(train_data.describe())
