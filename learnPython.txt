@@ -11,14 +11,16 @@ import graphviz
 # tthe 1st learning
 # tthe first time learning
 #  cong the third learning
-#  cong the 3.1 learning
+#  cong the 3.1.0 learning
+#  cong the 3.2 learning
+
 
 train_data = pd.read_csv('F:/chen/download/Titanic_Data-master/train.csv')
 test_data = pd.read_csv('F:/chen/download/Titanic_Data-master/test.csv')
 
 
 
-# 数据探索
+# 数据探索V3.1.0
 
 print(train_data.info())
 print('-'*30)
@@ -29,7 +31,7 @@ print('-'*30)
 print(train_data.head())
 print('-'*30)
 print(train_data.tail())
-# 数据清洗
+# Data V3.1.0 clear
 # 使用平均年龄来填充年龄中的 nan 值
 train_data['Age'].fillna(train_data['Age'].mean(), inplace=True)
 test_data['Age'].fillna(test_data['Age'].mean(), inplace=True)
@@ -57,9 +59,17 @@ test_features = dvec.transform(test_features.to_dict(orient='record'))
 # 决策树预测
 pred_labels = clf.predict(test_features)
 cyc_importance = clf.feature_importances_
-clf.fit
+clf_cycV3.1.0_.fit
 
-# 决策树准确率
+"""
+this is the new added words:
+Verion 3.1.0
+
+"""
+
+
+
+# accuratV3.1.0
 acc_decision_tree = round(clf.score(train_features, train_labels), 6)
 print(u'score 准确率为 %.4lf' % acc_decision_tree)
 # K 折交叉验证统计决策树准确率
@@ -67,4 +77,4 @@ print(u'cross_val_score 准确率为 %.4lf' % np.mean(cross_val_score(clf, train_fea
 # 决策树可视化
 dot_data = tree.export_graphviz(clf, out_file=None)
 graph = graphviz.Source(dot_data)
-graph.view()
+graph_cyc.view()
