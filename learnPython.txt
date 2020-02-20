@@ -8,10 +8,10 @@ import graphviz
 # Êı¾İ¼ÓÔØ
 
 # the first time learning
-# tthe first time learning
-# tthe first time learning
+# tthe 1st learning
 # tthe first time learning
 #  cong the third learning
+#  cong the 3.1 learning
 
 train_data = pd.read_csv('F:/chen/download/Titanic_Data-master/train.csv')
 test_data = pd.read_csv('F:/chen/download/Titanic_Data-master/test.csv')
